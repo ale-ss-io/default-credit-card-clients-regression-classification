@@ -69,39 +69,16 @@ ________________________________________
 
 **Análisis**:
 1. Abrir una terminal de Anaconda Prompt e ir a la carpeta donde descargaste este proyecto:
-   cd your_local_root\reto-tecnico
-2. Crear y activar el entorno virtual
-   conda create -n api_inmuebles_cuauhtemoc_env python=3.11.7 -y
-   conda activate api_inmuebles_cuauhtemoc_env
-3. Instalar dependencias
+   ```bash
+   cd your_local_root\default-credit-card-clients-regression-classification
+3. Crear y activar el entorno virtual
+   ```bash
+   conda create -n default_of_credit_card_clients_env python=3.11.7 -y
+   conda activate default_of_credit_card_clients_env
+5. Instalar dependencias
    pip install -r requirements.txt
-4. Navegar a your_local_root\reto-tecnico\notebooks y abrir el archivo model_develop_cuahutemoc_properties.ipynb en un su IDE prefererido, por ejemplo VSCode.
-5. Ejecutar el script, indicando adecuadamente el environment previamente creado.
-
-
-**API**:
-1. Abrir una terminal de Anaconda Prompt e ir a la carpeta donde descargaste este proyecto:
-   cd your_local_root\reto-tecnico
-2. Crear y activar el entorno virtual
-   conda create -n api_inmuebles_cuauhtemoc_env python=3.11.7 -y
-   conda activate api_inmuebles_cuauhtemoc_env
-3. Instalar dependencias
-   pip install -r requirements.txt
-4. Ejecutar el servidor FastAPI
-   uvicorn appFastAPI.app:app --reload
-5. Abrir la documentación interactiva (Ver el link en la terminal de Anaconda Prompt) en un navegador web
-   Ejemplo: http://127.0.0.1:8000/docs
-6. Colocar 7 carácteristicas de un inmueble en la API app, del cual desee encontrar similares a ella en la alcaldía Cuauhtemoc, CDMX. Las 7 carácteristicas son:
-   ```text
-   precio: float               # Valor en pesos mexicanos (MXN)
-   recamaras: int              # Número de recamaras en el inmueble
-   baños: int                  # Número de baños en el inmueble
-   año_construccion: float     # Año de construcción del inmueble
-   latitude: float             # Dentro de los límites de la alcaldía Cuauhtemoc, CDMX
-   longitude: float            # Dentro de los límites de la alcaldía Cuauhtemoc, CDMX
-   estado_conservacion: float  # Valor entre 0 y 1 donde 0 es pésimo y 1 excelente
-   ```
-8. Como salida verá una lista de las carácteristicas más similares a la dada. Adicionalmente, podra ver el link a un mapa que visualiza estas.
+6. Navegar a your_local_root\default-credit-card-clients-regression-classification y abrir el archivo model_develop_credit_card_clients.ipynb en su IDE prefererido, por ejemplo VSCode.
+7. Ejecutar el script, indicando adecuadamente el environment previamente creado.
 
 **Interpretación de solución para negocio**:
 
