@@ -71,14 +71,19 @@ ________________________________________
 1. Abrir una terminal de Anaconda Prompt e ir a la carpeta donde descargaste este proyecto:
    ```bash
    cd your_local_root\default-credit-card-clients-regression-classification
-3. Crear y activar el entorno virtual
+2. Crear y activar el entorno virtual
    ```bash
    conda create -n default_of_credit_card_clients_env python=3.11.7 -y
    conda activate default_of_credit_card_clients_env
-5. Instalar dependencias
+3. Instalar dependencias
+   ```bash
    pip install -r requirements.txt
-6. Navegar a your_local_root\default-credit-card-clients-regression-classification y abrir el archivo model_develop_credit_card_clients.ipynb en su IDE prefererido, por ejemplo VSCode.
-7. Ejecutar el script, indicando adecuadamente el environment previamente creado.
+4. Navegar a 
+   your_local_root\default-credit-card-clients-regression-classification
+   y abrir el archivo
+   model_develop_credit_card_clients.ipynb en su IDE prefererido, por ejemplo VSCode.
+
+5. Ejecutar el script, indicando adecuadamente el environment previamente creado.
 
 **Interpretación de solución para negocio**:
 
