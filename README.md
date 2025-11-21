@@ -39,39 +39,29 @@ El objetivo de este proyecto es, dado el conjunto de datos 'Default of Credit Ca
 ________________________________________
 **Solución**
 
-Para resolver este reto se realizó, principalmente:
+Nuestra solución consistió principalmente en:
 
-1. El análisis del conjunto de datos y entrenamiento de un modelo de vecinos cercanos (Jupyter notebook).
-2. Desarrollo y prueba de una API implementada con FastAPI (scripts .py)
+1. Calidad de datos, analisis de datos exploratorio, pre-procesamiento de datos, entrenamiento y evaluación de varios modelos ML para:
+   
+   **Clasificación**: predecir la variable categórica **default.payment.next.month** y
+   
+   **Regresión**: predecir la variable númerica **PAY_AMT4**.
 
 La estructura de este proyecto es:
 
 ```text
-API_similaridad_inmuebles_CuauhtemocCDMX/
-├── appFastAPI/
-│   ├── app.py                     # Lógica principal de la API
-│   ├── model.py                   # Funciones de procesamiento usadas en producción
-│   ├── requirements.txt           # Dependencias específicas de la API
-│
-├── notebooks/
-│   └── model_develop_cuahutemoc_properties.ipynb            # Notebook de análisis
-│
-├── output/
-│   ├── app/
-│   │   └── static/
-│   │       └── app/
-│   │           ├── mapa_propiedades_production.csv          # Propiedades similares identificadas (tabla) en API
-│   │           └── mapa_propiedades_production.html         # Propiedades similares identificadas (mapa) en API
-│   └── notebooks/
-│       └── mapa_propiedades/      # Visualizaciones generadas desde notebooks
-│
-├── data/
-│   └── cuahutemoc_properties.csv  # Dataset original
-│
-├── Respuestas_a_Desarrollo_de_Solucion.docx  # Respuestas solicitadas en el reto
-├── Reto_de_Data_Science.docx                 # Intrucciones de reto
-├── requirements.txt                          # Dependencias generales del proyecto
-└── README.md
+
+default-credit-card-clients/                         # Carpeta de proyecto
+├── .gitignore
+├── LICENSE
+├── model_develop_credit_card_clients.ipynb          # Script de solución final
+├── model_develop_credit_card_clients_develop.ipynb  # Script de desarrollo
+├── PPT_Resumen.pptx                                 # Presentación de solución propuesta
+├── README.md
+├── Respuestas_a_Desarrollo_de_Solucion.docx         # Archivo Word de Respuestas a preguntas de cliente de este proyecto 
+└── data/
+    └── default_of_credit_card_clients.csv           # Archivo CSV de conjunto de datos 'Default of Credit Card Clients'
+
 ```
 
 ________________________________________
