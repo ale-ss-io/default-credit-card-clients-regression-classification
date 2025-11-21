@@ -82,4 +82,14 @@ ________________________________________
 
 **Interpretación de solución para negocio**:
 
-La solución tiene potencial para resolver múltiples necesidades del negocio, incluyendo la automatización de valuaciones, la optimización de estrategias de precio, el soporte analítico para asesores comerciales, la auditoría y estandarización del uso de comparables, y el fortalecimiento de modelos de riesgo mediante información más confiable y homogénea.
+1. **Problema de regresión: estimación del monto de pago mensual (PAY_AMT4)**
+   
+   Para el problema de regresión se evaluaron tres modelos principales: Random Forest, XGBoost y LightGBM. La métrica objetivo fue R², dado que mide la proporción de variabilidad del monto pagado que el modelo es capaz de explicar.
+   
+   El modelo con mejor desempeño fue XGBoost, alcanzando un R² ≈ 0.82. Esto indica que el modelo es capaz de explicar alrededor del 82% de la variación del monto de pago mensual. Para negocio, este nivel de precisión permitiría anticipar montos esperados de pago, generar estrategias de cobranza diferenciadas y optimizar flujos financieros.
+
+3. **Problema de clasificación: predicción de incumplimiento de pago (default.payment.next.month)**
+   
+   Para la clasificación se utilizaron los mismos algoritmos, ahora en su versión de clasificación. La métrica seleccionada fue el F1-score de la clase 1, ya que representa un equilibrio entre la capacidad de detectar casos de incumplimiento (recall) y la precisión al hacerlo (precision).
+   
+   El mejor modelo fue Random Forest, alcanzando un Recall de Clase 1 ≈ 54%. Esto significa que el modelo es capaz de identificar poco más de la mitad de los clientes que incurrirán en mora. Aunque el desempeño es razonable, aún existe margen de mejora si el objetivo del negocio es detectar más casos de riesgo de mora. 
